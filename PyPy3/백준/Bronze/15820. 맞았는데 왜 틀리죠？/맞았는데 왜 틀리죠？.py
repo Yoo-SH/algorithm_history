@@ -16,11 +16,11 @@ def main():
         if answer == right_answer:
             S_2_right_answer_count +=1
 
-    if S_1_right_answer_count == S_1:
+    if S_1_right_answer_count == S_1 and S_2_right_answer_count == S_2:
         print("Accepted")
     elif S_1_right_answer_count < S_1:
         print("Wrong Answer")
-    elif S_1_right_answer_count == S_1 and S_1_right_answer_count < S_2:
+    elif S_1_right_answer_count == S_1 and S_2_right_answer_count < S_2:
         print("Why Wrong!!!")
         
 
