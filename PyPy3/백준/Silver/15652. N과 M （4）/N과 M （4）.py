@@ -2,12 +2,9 @@ import sys
 input = sys.stdin.readline
 
 N, M = 0,0
-collection_before = set()
 def backtracking(start, path):
-    if len(path) == M and tuple(path) not in collection_before:
+    if len(path) == M:
         print(*path)
-        collection_before.add(tuple(path))
-        collection_before.add(tuple(reversed(path)))
         return  
     
     for i in range(start, N + 1):
