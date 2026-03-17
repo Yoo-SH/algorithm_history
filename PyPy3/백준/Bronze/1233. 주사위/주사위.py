@@ -20,7 +20,7 @@ def solution():
     for key, val in combi_dict.items():
         combi_list.append((key,val))
 
-    combi_list= sorted(combi_list, key=lambda x: x[1], reverse=True)
+    combi_list= sorted(combi_list, key=lambda x: (-x[1],x[0]))
 
     print(combi_list[0][0])
 
