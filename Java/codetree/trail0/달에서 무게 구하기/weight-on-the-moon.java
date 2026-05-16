@@ -1,6 +1,8 @@
 public class Main {
     public static void main(String[] args) {
         // Please write your code here.
-        System.out.printf("%d * %f = %f", 13, 0.165, 13*0.165);
+        int a = 13;
+        double b = 0.165;
+        System.out.printf("%d * %.6f = %.6f", a,b,a*b);
     }
 }
