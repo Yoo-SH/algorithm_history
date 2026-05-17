@@ -3,14 +3,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int N = sc.nextInt();
+        
+        int n = sc.nextInt();
 
-        if ((N % 2 == 1 && N % 3 == 0) || (N % 2 == 0 && N % 5 ==0)){
-            System.out.print(true);
-        }else{
-            System.out.print(false);
-        }
-
-
+        System.out.print( (n % 2 != 0 && n % 3 == 0) || (n % 2 == 0 && n % 5 == 0) );
     }
 }
