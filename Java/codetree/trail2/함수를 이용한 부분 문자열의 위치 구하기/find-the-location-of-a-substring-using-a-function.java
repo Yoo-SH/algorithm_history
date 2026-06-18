@@ -8,17 +8,20 @@ import java.util.StringTokenizer;
 public class Main {
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    static String N;
+    static String M;
 
 
-    public static int fuction(String N, String M){
+
+    public static int fuction(){
         return N.indexOf(M);
     }
 
     public static void main(String[] args) throws IOException {
-        String N = br.readLine();
-        String M  = br.readLine();
+        N = br.readLine();
+        M  = br.readLine();
 
-        bw.write(String.valueOf(fuction(N,M)));
+        bw.write(String.valueOf(fuction()));
         bw.close();
     }
 }
