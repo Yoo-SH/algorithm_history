@@ -18,7 +18,7 @@ public class Main {
         String s = st.nextToken();
         String a = st.nextToken();
         int t = Integer.parseInt(st.nextToken());
-        Object ob = new Object(s,a,t);
+        Messege ob = new Messege(s,a,t);
 
         sb.append(String.format("secret code : %s\n",ob.secreteCode)).append(String.format("meeting point : %s\n",ob.area)).append(String.format("time : %d\n",ob.time));
         bw.write(sb.toString());
@@ -26,12 +26,12 @@ public class Main {
     }
 }
 
-class Object{
+class Messege{
     String secreteCode;
     String area;
     int time;
 
-    Object(String s, String a, int t){
+    Messege(String s, String a, int t){
         this.secreteCode = s;
         this.area = a;
         this.time = t;
