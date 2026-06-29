@@ -1,3 +1,4 @@
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStreamReader;
@@ -22,17 +23,17 @@ public class Main {
         }
 
         // 연속하여 동일한 숫자가 나오는 횟수를 구함
-        int countMax =0;
-        int count =0;
+        int countMax =1;
+        int count =1;
         for (int i=0;i<n;i++){
-            if(i ==0 || arr[i-1] != arr[i]) count =0;
+            if(i ==0 || arr[i-1] != arr[i]) count =1;
             else count++;
 
             countMax = Math.max(countMax,count);
         }
 
 
-        bw.write(String.valueOf(countMax+1));
+        bw.write(String.valueOf(countMax));
         bw.close();
     }
 }
