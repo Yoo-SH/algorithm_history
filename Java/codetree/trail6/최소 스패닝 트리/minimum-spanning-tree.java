@@ -42,8 +42,8 @@ public class Main {
             parent[i] = i;
         }
 
-        Arrays.sort(edges, (a,b)->(a[2]-b[2]));
-
+        Arrays.sort(edges, (a, b) -> Integer.compare(a[2], b[2]));  
+        
         int answer =0;
         int count =0;
 
