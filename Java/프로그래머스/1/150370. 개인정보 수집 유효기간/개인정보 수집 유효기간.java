@@ -20,8 +20,7 @@ class Solution {
         }
         
         
-        
-        
+
         for(int i=0;i<privacies.length;i++){
             
             String privacy = privacies[i];
