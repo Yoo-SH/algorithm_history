@@ -10,7 +10,7 @@ class Solution {
         Arrays.sort(citations);
         
         
-        for(int h=1000; h>=0;h--){
+        for(int h=citations[citations.length-1]; h>=0;h--){
             int count =0;
             for(int i=0;i<citations.length;i++){
                 if(citations[i] >=h) count++;
