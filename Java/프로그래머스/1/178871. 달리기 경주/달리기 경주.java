@@ -15,7 +15,7 @@ class Solution {
         //     int idx = rank.indexOf(call);    
         // }
         
-        Map<String,Integer> rankMap = new HashMap<>(); // 이름, 랭킹
+        TreeMap<String,Integer> rankMap = new TreeMap<>(); // 이름, 랭킹
         for(int i =0;i<players.length;i++){
             rankMap.put(players[i],i);
         }
